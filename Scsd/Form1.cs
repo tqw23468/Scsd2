@@ -156,6 +156,7 @@ namespace Scsd
                         else {
                             
                             int ppp = -1;
+
                             for (int h = 0; h < lss[i - 1].tianls.Count; h++)
                             {
                                 if (lss[i - 1].tianls[h].chanping == lss[i].tianls[j].chanping) { ppp = h; break; }
@@ -165,6 +166,7 @@ namespace Scsd
                             yu -= lss[i].tianls[j].sudu * (lss[i].end - lss[i].strart);
                             lss[i].tianls.RemoveAt(j);
                             j--;
+
                         }
                         if (yu == 0) break;
                     }                               
